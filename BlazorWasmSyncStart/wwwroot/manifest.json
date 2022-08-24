@@ -1,6 +1,6 @@
 {
-  "name": "BlazorSyncfusionNavigation",
-  "short_name": "BlazorSyncfusionNavigation",
+  "name": "BlazorWasmSyncStart",
+  "short_name": "BlazorWasmSyncStart",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",
