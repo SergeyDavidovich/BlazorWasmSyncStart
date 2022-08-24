@@ -10,15 +10,15 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.7" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.7" PrivateAssets="all" />
-    <PackageReference Include="Syncfusion.Blazor.Buttons" Version="20.2.0.40" />
-    <PackageReference Include="Syncfusion.Blazor.Navigations" Version="20.2.0.40" />
-    <PackageReference Include="Syncfusion.Blazor.SplitButtons" Version="20.2.0.40" />
+    <PackageReference Include="Syncfusion.Blazor.Buttons" Version="20.2.0.45" />
+    <PackageReference Include="Syncfusion.Blazor.Navigations" Version="20.2.0.45" />
+    <PackageReference Include="Syncfusion.Blazor.SplitButtons" Version="20.2.0.45" />
       <PackageReference Include="Syncfusion.Blazor.Themes" Version="20.2.0.40" />
 </ItemGroup>
 
   <ItemGroup>
     <ServiceWorker Include="wwwroot\service-worker.js" PublishedContent="wwwroot\service-worker.published.js" />
-      <PackageReference Include="Syncfusion.Blazor.Themes" Version="20.2.0.40" />
+      <PackageReference Include="Syncfusion.Blazor.Themes" Version="20.2.0.45" />
 </ItemGroup>
 
   <ItemGroup>
