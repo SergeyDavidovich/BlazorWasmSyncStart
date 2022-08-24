@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Syncfusion.Blazor;
 
 
-namespace BlazorSyncfusionNavigation
+namespace BlazorWasmSyncStart
 {
     public class Program
     {
