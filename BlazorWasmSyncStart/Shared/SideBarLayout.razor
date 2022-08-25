@@ -4,8 +4,9 @@
 
 <SfToolbar>
     <ToolbarItems>
-        <ToolbarItem Text="Toogle" Align="ItemAlign.Left" OnClick="Open">
+        <ToolbarItem Text="Toogle" Align="ItemAlign.Left">
             <Template>
+                <ToolbarEvents Clicked="@Open"></ToolbarEvents>
                 <SfButton IconCss="oi oi-menu" IconPosition="IconPosition.Right">
                 </SfButton>
             </Template>
@@ -34,6 +35,7 @@
             <div style="display:flex; justify-content:center; align-content:center;">
                 <img height="120" width="240" src="images/lights.jpg" />
             </div>
+            <NavigationMenu></NavigationMenu>
         </div>
     </ChildContent>
 </SfSidebar>
@@ -43,11 +45,20 @@
 </div>
 
 <style>
+    .link {
+        color: white;
+        font-size: 16px;
+        padding: 20px;
+        margin-top:40px;
+    }
+
+
     :root {
         --sidebar-width: 250px;
         --toolbar-height: 52px;
     }
-        .e-toolbar {
+
+    .e-toolbar {
         z-index: 1000;
         background-color: #566575;
     }
@@ -86,12 +97,12 @@
 </style>
 @code {
     SfSidebar? sidebarObj;
-    public bool SidebarOpen;
+    public bool SidebarOpen = true;
     public void Close()
     {
         SidebarOpen = false;
     }
-    public void Open()
+    public void Open(ClickEventArgs args)
     {
         SidebarOpen = true;
         //SidebarToggle = !SidebarToggle;
