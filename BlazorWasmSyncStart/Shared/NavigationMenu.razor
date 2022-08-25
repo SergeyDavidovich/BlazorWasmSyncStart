@@ -1,28 +1,47 @@
-﻿        <nav>
+﻿        <nav id="nav">
+            <hr />
             <div class="nav-item px-3">
                 <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
                     <span class="oi oi-home" aria-hidden="true"></span> Home
                 </NavLink>
             </div>
+            <hr />
             <div class="nav-item px-3">
                 <NavLink class="nav-link" href="counter" >
                     <span class="oi oi-plus" aria-hidden="true"></span> Counter
                 </NavLink>
             </div>
+            <hr />
             <div class="nav-item px-3">
                 <NavLink class="nav-link" href="fetchdata">
                     <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
                 </NavLink>
             </div>
+            <hr />
         </nav>
 
         <style>
+            #nav{
+                margin-top:12px;
+                display:flex;
+                flex-direction:column
+            }
+            hr{
+                width:80%;
+                background-color:wheat;
+                align-self:center;
+
+            }
             .nav-link{
                 display:block;
                 color:white;
-                font-size:1.2em;
-                margin:8px;
+                font-size:1.3em;
                 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight:100;
+            }
+            .nav-link:hover{
+                color:white;
+                text-decoration:underline;
             }
         </style>
 }
