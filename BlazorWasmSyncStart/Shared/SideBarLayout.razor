@@ -25,11 +25,11 @@
 </SfToolbar>
 
 <SfSidebar @ref="@sidebarObj" Type="SidebarType.Over" IsOpen="@SidebarOpen" EnablePersistence="false"
-           MediaQuery="(min-width: 719px)" EnableGestures="true">
+           EnableGestures="true">
     <ChildContent>
         <div>
             <div style="display:flex; height:var(--toolbar-height); justify-content:left; align-content:center">
-                <SfButton IconCss="oi oi-menu" IconPosition="IconPosition.Right" OnClick="Close">
+                <SfButton IconCss="oi oi-menu" IconPosition="IconPosition.Right" @onclick="Close">
                 </SfButton>
             </div>
             <div style="display:flex; justify-content:center; align-content:center;">
@@ -99,7 +99,7 @@
     }
     public void Close()
     {
-        SidebarOpen = true;
+        SidebarOpen = false;
     }
     public void Open(ClickEventArgs args)
     {
