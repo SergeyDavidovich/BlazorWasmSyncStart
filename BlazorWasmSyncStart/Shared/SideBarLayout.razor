@@ -25,7 +25,7 @@
 </SfToolbar>
 
 <SfSidebar @ref="@sidebarObj" Type="SidebarType.Over" IsOpen="@SidebarOpen" EnablePersistence="false"
-           EnableGestures="true">
+           EnableGestures="true" MediaQuery="(min-width: 719px)">
     <ChildContent>
         <div>
             <div style="display:flex; height:var(--toolbar-height); justify-content:left; align-content:center">
@@ -94,7 +94,6 @@
 
     protected override void OnInitialized()
     {
-        base.OnInitialized();
         SidebarOpen = false;
     }
     public void Close()
