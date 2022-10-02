@@ -87,16 +87,22 @@
         padding: 0px !important;
     }
 </style>
+
 @code {
     SfSidebar? sidebarObj;
-    public bool SidebarOpen = true;
+    public bool SidebarOpen;
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        SidebarOpen = false;
+    }
     public void Close()
     {
-        SidebarOpen = false;
+        SidebarOpen = true;
     }
     public void Open(ClickEventArgs args)
     {
         SidebarOpen = true;
-        //SidebarToggle = !SidebarToggle;
     }
 }
