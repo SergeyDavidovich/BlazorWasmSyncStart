@@ -24,7 +24,7 @@
     </ToolbarItems>
 </SfToolbar>
 
-<SfSidebar @ref="@sidebarObj" Type="SidebarType.Over" IsOpen="@SidebarOpen" EnablePersistence="false"
+<SfSidebar @ref="@sidebarObj" Type="SidebarType.Over" IsOpen="@IsSidebarOpen" EnablePersistence="false" CloseOnDocumentClick="true"
            EnableGestures="true" MediaQuery="(min-width: 780px)">
     <ChildContent>
         <div>
@@ -90,18 +90,29 @@
 
 @code {
     SfSidebar? sidebarObj;
-    public bool SidebarOpen;
+    public bool IsSidebarOpen;
 
     protected override void OnInitialized()
     {
-        SidebarOpen = false;
+//#if DEBUG
+//    Thread.Sleep(6000);
+//#endif
     }
+    protected override void OnAfterRender(bool firstRender)
+    {
+        base.OnAfterRender(firstRender);
+        IsSidebarOpen = sidebarObj.IsOpen;
+
+
+    }
+
+    
     public void Close()
     {
-        SidebarOpen = false;
+        IsSidebarOpen = false;
     }
     public void Open(ClickEventArgs args)
     {
-        SidebarOpen = true;
+        IsSidebarOpen = true;
     }
 }
