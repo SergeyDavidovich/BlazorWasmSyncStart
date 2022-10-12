@@ -1,0 +1,2 @@
+# BlazorWasmSyncStart
+BlazorWasmSyncStart
