@@ -73,7 +73,7 @@
       "url": "images\/lights.jpg"
     },
     {
-      "hash": "sha256-L+oJR5fZK6LaPToPU3pckd2a9+6VV907xPHIQwW3Bto=",
+      "hash": "sha256-tDkPP8Jidj3i5i6aLiqv2XaB6aASRGnrvSiviVWrmSY=",
       "url": "index.html"
     },
     {
@@ -117,11 +117,15 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-p1Abx3YzVkDhLK+H\/ZP5gpv8+EUjCjP5RotLj48FGpc=",
+      "hash": "sha256-v\/DBul6ylRSp\/OZH7\/P4E8\/qqPEansxk32Ca8\/wqZo0=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-xBTnE1kabYxiXQVOyTEVs7fbP5kj0P77FjNlpTZlg9M=",
+      "hash": "sha256-vGiYBLVyybxLbKCTltgck+lsQRQ3jNQ5QnA+alJq\/7Q=",
+      "url": "_framework\/BlazorAnimate.dll"
+    },
+    {
+      "hash": "sha256-yj8xMOKTA3LLq+jUzZvxcRUsj7wNC1QViniIhQlI+v0=",
       "url": "_framework\/BlazorWasmSyncStart.dll"
     },
     {
@@ -173,7 +177,7 @@
       "url": "_framework\/Microsoft.Extensions.Logging.dll"
     },
     {
-      "hash": "sha256-1tB1TdOK1QaMSk7+PPe5sikuuMC9hs8bkujWqFMdAx4=",
+      "hash": "sha256-XJVMUzeR97uO0F84KSPZHXdY+moZaK0w\/p6QnuSPo9g=",
       "url": "_framework\/Microsoft.Extensions.Options.dll"
     },
     {
@@ -187,6 +191,10 @@
     {
       "hash": "sha256-JnYE3PacT+0TrHdA2lIvLkQwSgtLQlRYc+tzxGVgpOM=",
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.dll"
+    },
+    {
+      "hash": "sha256-0RVN5K9W6cJ6GN+LNY0HQ\/UbnkFJ97Y3ECQTVTvYGCU=",
+      "url": "_framework\/netstandard.dll"
     },
     {
       "hash": "sha256-GuG829Z5m5SA1hkma+i5Lfev8S+5UEUAtG0rYTZINSI=",
@@ -409,6 +417,14 @@
       "url": "BlazorWasmSyncStart.styles.css"
     },
     {
+      "hash": "sha256-GqiEX9BuR1rv5zPU5Vs2qS\/NSHl1BJyBcjQYJ6ycwD4=",
+      "url": "_content\/BlazorAnimate\/aos.css"
+    },
+    {
+      "hash": "sha256-DybIYDc6jH0DSjC296BHo1mWVjUSHWjUunUOd3BTP+4=",
+      "url": "_content\/BlazorAnimate\/blazorAnimateInterop.js"
+    },
+    {
       "hash": "sha256-mugEeL5u5R+Wn6EKvadiueu\/12ofYwNfGyaFjj8xf1Y=",
       "url": "_content\/Syncfusion.Blazor.Core\/scripts\/compression.min.js"
     },
@@ -625,5 +641,5 @@
       "url": "_content\/Syncfusion.Blazor.Themes\/tailwind.css"
     }
   ],
-  "version": "Uv5BAtGn"
+  "version": "oe43voFf"
 };
