@@ -6,30 +6,30 @@
     <ToolbarItems>
         <ToolbarItem Text="Toogle" Align="ItemAlign.Left">
             <Template>
-                <ToolbarEvents Clicked="@Open"></ToolbarEvents>
-                <SfButton IconCss="oi oi-menu" IconP tion="IconPosition.Right">
-                </SfButton>
+                <SfButton IconCss="oi oi-menu" IconPosition="IconPosition.Right" @onclick="Toggle"></SfButton>
             </Template>
         </ToolbarItem>
-        <ToolbarItem Text="Item 1" Align="ItemAlign.Right"></ToolbarItem>
+        @*<ToolbarItem Text="Item 1" Align="ItemAlign.Right"></ToolbarItem>*@
         //To separate the Toolbar items
-        <ToolbarItem></ToolbarItem>
-        <ToolbarItem Text="Item 2" Align="ItemAlign.Right"></ToolbarItem>
+        @*<ToolbarItem></ToolbarItem>*@
+        @*<ToolbarItem Text="Item 2" Align="ItemAlign.Right"></ToolbarItem>*@
         <ToolbarItem Text="Toogle" Align="ItemAlign.Right">
             <Template>
                 <SfButton Content="Mode" IconCss="oi oi-sun" IconPosition="IconPosition.Right">
                 </SfButton>
             </Template>
         </ToolbarItem>
+        <ToolbarItem Text=@($"Open = {@IsSidebarOpen.ToString()}") Align="ItemAlign.Right"></ToolbarItem>
     </ToolbarItems>
 </SfToolbar>
 
-<SfSidebar @ref="@sidebarObj" Type="SidebarType.Over" IsOpen="@IsSidebarOpen" EnablePersistence="false" CloseOnDocumentClick="true"
-           EnableGestures="true" MediaQuery="(min-width: 780px)">
+<SfSidebar @ref="@sidebarObj" Type="SidebarType.Over" @bind-IsOpen="IsSidebarOpen"
+           EnablePersistence="false" CloseOnDocumentClick="false" ShowBackdrop="false"
+           EnableGestures="true" MediaQuery="(min-width: 600px)">
     <ChildContent>
         <div>
             <div style="display:flex; height:var(--toolbar-height); justify-content:left; align-content:center">
-                <SfButton IconCss="oi oi-menu" IconPosition="IconPosition.Right" @onclick="Close">
+                <SfButton IconCss="oi oi-menu" IconPosition="IconPosition.Right" @onclick="Toggle">
                 </SfButton>
             </div>
             <div style="display:flex; justify-content:center; align-content:center;">
@@ -90,13 +90,13 @@
 
 @code {
     SfSidebar? sidebarObj;
-    public bool IsSidebarOpen;
+    public bool IsSidebarOpen = false;
 
     protected override void OnInitialized()
     {
-//#if DEBUG
-//    Thread.Sleep(6000);
-//#endif
+        //#if DEBUG
+        //    Thread.Sleep(6000);
+        //#endif
     }
     protected override void OnAfterRender(bool firstRender)
     {
@@ -104,13 +104,9 @@
         IsSidebarOpen = sidebarObj.IsOpen;
     }
 
-    
-    public void Close()
+
+    public void Toggle()
     {
-        IsSidebarOpen = false;
-    }
-    public void Open(ClickEventArgs args)
-    {
-        IsSidebarOpen = true;
+        IsSidebarOpen = !IsSidebarOpen;
     }
 }
