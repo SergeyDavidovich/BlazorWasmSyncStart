@@ -2,7 +2,7 @@
 @using Syncfusion.Blazor.Navigations
 @using Syncfusion.Blazor.Buttons
 
-<SfToolbar>
+<SfToolbar Height="52px">
     <ToolbarItems>
         <ToolbarItem Text="Toogle" Align="ItemAlign.Left">
             <Template>
@@ -28,7 +28,7 @@
            EnableGestures="true" MediaQuery="(min-width: 600px)">
     <ChildContent>
         <div>
-            <div style="display:flex; height:var(--toolbar-height); justify-content:left; align-content:center">
+            <div style="display:flex; height:52px; justify-content:left; align-content:center">
                 <SfButton IconCss="oi oi-menu" IconPosition="IconPosition.Right" @onclick="Toggle">
                 </SfButton>
             </div>
@@ -41,7 +41,7 @@
 </SfSidebar>
 
 <div style="text-align: center; width:auto; height:92vh">
-    @Body
+        @Body
 </div>
 
 <style>
