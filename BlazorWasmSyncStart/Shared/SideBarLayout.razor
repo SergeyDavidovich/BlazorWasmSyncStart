@@ -15,16 +15,12 @@
         @*<ToolbarItem Text="Item 2" Align="ItemAlign.Right"></ToolbarItem>*@
         <ToolbarItem Text="Toogle" Align="ItemAlign.Right">
             <Template>
-                @*
-                <SfButton Content="" IconCss="oi oi-moon" IconPosition="IconPosition.Right" IsToggle="true">
-                </SfButton>
-                *@
                 <SfButton @ref="ThemeToggler" IconCss="@themeIconClass" IconPosition="IconPosition.Right" IsToggle="true" @onclick="ThemeToggle">
                 </SfButton>
             </Template>
         </ToolbarItem>
-        <ToolbarItem Text=@($"Open = {@IsSidebarOpen.ToString()}") Align="ItemAlign.Right"></ToolbarItem>
-        <ToolbarItem Text=@($"Theme = {IsThemeDark.ToString()}") Align="ItemAlign.Right"></ToolbarItem>
+        <ToolbarItem Text=@($"IsOpen = {@IsSidebarOpen.ToString()}") Align="ItemAlign.Right"></ToolbarItem>
+        <ToolbarItem Text=@($"IsDark = {IsThemeDark.ToString()}") Align="ItemAlign.Right"></ToolbarItem>
     </ToolbarItems>
 </SfToolbar>
 
