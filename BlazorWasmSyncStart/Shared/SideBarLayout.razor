@@ -15,7 +15,11 @@
         @*<ToolbarItem Text="Item 2" Align="ItemAlign.Right"></ToolbarItem>*@
         <ToolbarItem Text="Toogle" Align="ItemAlign.Right">
             <Template>
-                <SfButton Content="Mode" IconCss="oi oi-sun" IconPosition="IconPosition.Right">
+                @*
+                <SfButton Content="" IconCss="oi oi-moon" IconPosition="IconPosition.Right" IsToggle="true">
+                </SfButton>
+                *@
+                <SfButton Content="" IconCss="oi oi-sun" IconPosition="IconPosition.Right" IsToggle="true">
                 </SfButton>
             </Template>
         </ToolbarItem>
@@ -41,7 +45,7 @@
 </SfSidebar>
 
 <div style="text-align: center; width:auto; height:92vh">
-        @Body
+    @Body
 </div>
 
 <style>
@@ -98,13 +102,11 @@
         //    Thread.Sleep(6000);
         //#endif
     }
-    protected override void OnAfterRender(bool firstRender)
-    {
-        base.OnAfterRender(firstRender);
-        IsSidebarOpen = sidebarObj.IsOpen;
-    }
-
-
+    //protected override void OnAfterRender(bool firstRender)
+    //{
+    //    base.OnAfterRender(firstRender);
+    //    IsSidebarOpen = sidebarObj.IsOpen;
+    //}
     public void Toggle()
     {
         IsSidebarOpen = !IsSidebarOpen;
