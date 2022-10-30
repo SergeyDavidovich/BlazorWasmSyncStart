@@ -6,7 +6,7 @@
     <ToolbarItems>
         <ToolbarItem Text="Toogle" Align="ItemAlign.Left">
             <Template>
-                <SfButton IconCss="oi oi-menu" IconPosition="IconPosition.Right" @onclick="Toggle"></SfButton>
+                <SfButton IconCss="oi oi-menu" IconPosition="IconPosition.Right" @onclick="SideBarToggle"></SfButton>
             </Template>
         </ToolbarItem>
         @*<ToolbarItem Text="Item 1" Align="ItemAlign.Right"></ToolbarItem>*@
@@ -19,11 +19,12 @@
                 <SfButton Content="" IconCss="oi oi-moon" IconPosition="IconPosition.Right" IsToggle="true">
                 </SfButton>
                 *@
-                <SfButton Content="" IconCss="oi oi-sun" IconPosition="IconPosition.Right" IsToggle="true">
+                <SfButton @ref="ThemeToggler" IconCss="@themeIconClass" IconPosition="IconPosition.Right" IsToggle="true" @onclick="ThemeToggle">
                 </SfButton>
             </Template>
         </ToolbarItem>
         <ToolbarItem Text=@($"Open = {@IsSidebarOpen.ToString()}") Align="ItemAlign.Right"></ToolbarItem>
+        <ToolbarItem Text=@($"Theme = {IsThemeDark.ToString()}") Align="ItemAlign.Right"></ToolbarItem>
     </ToolbarItems>
 </SfToolbar>
 
@@ -33,7 +34,7 @@
     <ChildContent>
         <div>
             <div style="display:flex; height:52px; justify-content:left; align-content:center">
-                <SfButton IconCss="oi oi-menu" IconPosition="IconPosition.Right" @onclick="Toggle">
+                <SfButton IconCss="oi oi-menu" IconPosition="IconPosition.Right" @onclick="SideBarToggle">
                 </SfButton>
             </div>
             <div style="display:flex; justify-content:center; align-content:center;">
@@ -94,7 +95,12 @@
 
 @code {
     SfSidebar? sidebarObj;
+    SfButton? ThemeToggler;
     public bool IsSidebarOpen = false;
+    string themeIconClass="oi oi-sun";
+
+    [CascadingParameter]
+    public bool IsThemeDark { get; set; } = false;
 
     protected override void OnInitialized()
     {
@@ -102,13 +108,19 @@
         //    Thread.Sleep(6000);
         //#endif
     }
-    //protected override void OnAfterRender(bool firstRender)
-    //{
-    //    base.OnAfterRender(firstRender);
-    //    IsSidebarOpen = sidebarObj.IsOpen;
-    //}
-    public void Toggle()
+
+    public void SideBarToggle()
     {
         IsSidebarOpen = !IsSidebarOpen;
+    }
+    public void ThemeToggle()
+    {
+        IsThemeDark = !IsThemeDark;
+        themeIconClass = GetThemeIcon(IsThemeDark);
+    }
+    private string GetThemeIcon(bool isDark)
+    {
+        if (isDark) return "oi oi-moon";
+        else return "oi oi-sun";
     }
 }
