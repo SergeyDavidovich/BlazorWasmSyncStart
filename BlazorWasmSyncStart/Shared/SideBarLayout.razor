@@ -9,10 +9,6 @@
                 <SfButton IconCss="oi oi-menu" IconPosition="IconPosition.Right" @onclick="SideBarToggle"></SfButton>
             </Template>
         </ToolbarItem>
-        @*<ToolbarItem Text="Item 1" Align="ItemAlign.Right"></ToolbarItem>*@
-        //To separate the Toolbar items
-        @*<ToolbarItem></ToolbarItem>*@
-        @*<ToolbarItem Text="Item 2" Align="ItemAlign.Right"></ToolbarItem>*@
         <ToolbarItem Text="Toogle" Align="ItemAlign.Right">
             <Template>
                 <SfButton @ref="ThemeToggler" IconCss="@themeIconClass" IconPosition="IconPosition.Right" IsToggle="true" @onclick="ThemeToggle">
@@ -54,6 +50,7 @@
     .e-toolbar {
         z-index: 1000;
         background-color: #566575;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, .25);
     }
 
         .e-toolbar .e-toolbar-items {
@@ -63,7 +60,6 @@
 
         .e-toolbar .e-tbar-btn {
             background: transparent;
-            box-shadow: none;
             color: #ffffff;
         }
 
