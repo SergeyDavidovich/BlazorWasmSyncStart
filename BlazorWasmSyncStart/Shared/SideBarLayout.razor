@@ -22,7 +22,7 @@
 *@
 
 <div id="toolbar">
-    <button id="toolbar-menu-button" @onclick="@SideBarToggle"><span class="oi oi-menu"></span></button>
+    <button class="menu-button" @onclick="@SideBarToggle"><span class="oi oi-menu"></span></button>
 </div>
 
 <SfSidebar @ref="@sidebarObj" Type="SidebarType.Over" @bind-IsOpen="IsSidebarOpen"
@@ -30,10 +30,12 @@
            EnableGestures="true" MediaQuery="(min-width: 600px)">
     <ChildContent>
         <div>
-            <div style="display:flex; height:52px; justify-content:left; align-content:center">
-                <SfButton IconCss="oi oi-menu" IconPosition="IconPosition.Right" @onclick="SideBarToggle">
+            <div style="display:flex; height:var(--toolbar-height); justify-content:left; align-content:center">
+                <button class="menu-button" @onclick="@SideBarToggle"><span class="oi oi-menu"></span></button>
+
+@*                <SfButton IconCss="oi oi-menu" IconPosition="IconPosition.Right" @onclick="SideBarToggle">
                 </SfButton>
-            </div>
+*@            </div>
                 <div style="display:flex; justify-content:center; align-content:center;">
                     <img height="120" width="240" src="images/lights.jpg" />
                 </div>
@@ -60,10 +62,11 @@
         width: 100vw;
         box-shadow: 0 3px 5px rgba(0, 0, 0, .25);
     }
-    #toolbar-menu-button{
+    .menu-button{
         justify-self:center;
         background:none; 
         border:none;
+        font-size:16px;
         color:white;
         margin-left:8px;
     }
