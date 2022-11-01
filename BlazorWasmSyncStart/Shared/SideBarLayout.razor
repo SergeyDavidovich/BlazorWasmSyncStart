@@ -29,9 +29,9 @@
                 <SfButton IconCss="oi oi-menu" IconPosition="IconPosition.Right" @onclick="SideBarToggle">
                 </SfButton>
             </div>
-            <div style="display:flex; justify-content:center; align-content:center;">
-                <img height="120" width="240" src="images/lights.jpg" />
-            </div>
+                <div style="display:flex; justify-content:center; align-content:center;">
+                    <img height="120" width="240" src="images/lights.jpg" />
+                </div>
             <NavigationMenu></NavigationMenu>
         </div>
     </ChildContent>
@@ -89,7 +89,7 @@
     SfSidebar? sidebarObj;
     SfButton? ThemeToggler;
     public bool IsSidebarOpen = false;
-    string themeIconClass="oi oi-sun";
+    string themeIconClass = "oi oi-sun";
 
     [CascadingParameter]
     public bool IsThemeDark { get; set; } = false;
