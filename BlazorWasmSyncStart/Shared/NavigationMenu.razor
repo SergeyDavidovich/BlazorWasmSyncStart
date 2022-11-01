@@ -1,33 +1,41 @@
 ﻿        <nav id="nav">
             <hr />
-                        <Animate Animation="Animations.FadeRight" DurationMs="1000">
-
             <div class="px-3">
+            <Animate Animation="Animations.SlideRight" DurationMs="@duration">
                 <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
                     Home
                 </NavLink>
+                </Animate>
             </div>
             <hr />
             <div class="nav-item px-3">
+            <Animate Animation="Animations.SlideRight" DurationMs="@duration">
                 <NavLink class="nav-link" href="counter" >
                     <span aria-hidden="true"></span> Counter
                 </NavLink>
+</Animate>
             </div>
             <hr />
             <div class="nav-item px-3">
+                  <Animate Animation="Animations.SlideRight" DurationMs="@duration">
                 <NavLink class="nav-link" href="fetchdata">
                     <span aria-hidden="true"></span>Fetch data
                 </NavLink>
+          </Animate>
             </div>
             <hr />
               <div class="nav-item px-3">
-                <NavLink class="nav-link" href="empty">
+          <Animate Animation="Animations.SlideRight" DurationMs="@duration">
+                  <NavLink class="nav-link" href="empty">
                     <span aria-hidden="true"></span>Empty
                 </NavLink>
+                </Animate>
             </div>
             <hr />
-            </Animate>
         </nav>
+@code{
+    private int duration = 500;
+        }
 
         <style>
             #nav{
