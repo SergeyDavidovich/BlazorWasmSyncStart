@@ -109,7 +109,7 @@
       "url": "images\/logo.jpg"
     },
     {
-      "hash": "sha256-ejl89UsteQtDzpTdBLoVMSDtvfAmJZMoFoxjkXJhyy8=",
+      "hash": "sha256-KQn5EnBAh5GoDCEFllAyVB3H4NJRvc4nHf\/CdeQARAQ=",
       "url": "index.html"
     },
     {
@@ -153,7 +153,7 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-YyFv7zr4N0F1Eq\/I8ENE\/aF4R6yGYh8IgOJPMvPu1zI=",
+      "hash": "sha256-m0t2PaI8t8c1qhVbm2HfRdS86h+CffkVfw3f0xzk9EM=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -161,7 +161,7 @@
       "url": "_framework\/BlazorAnimate.dll"
     },
     {
-      "hash": "sha256-tra0j3jdJ9VN2RnlFAFxgjj3cKrds6EdyHGgtynCTEg=",
+      "hash": "sha256-IdZNfnaQjpZfYOAKsOMH0Pxrf3y271z2lJ1VYD2G+7s=",
       "url": "_framework\/BlazorWasmSyncStart.dll"
     },
     {
@@ -677,5 +677,5 @@
       "url": "_content\/Syncfusion.Blazor.Themes\/tailwind.css"
     }
   ],
-  "version": "iSM+1lwv"
+  "version": "MGurz86B"
 };
