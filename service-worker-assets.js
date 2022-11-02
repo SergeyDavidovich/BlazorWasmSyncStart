@@ -73,6 +73,10 @@
       "url": "images\/lights.jpg"
     },
     {
+      "hash": "sha256-jA6Ok3\/svFHI1YKsuDAyN\/6caoBpdYBdRvdrEG5aGi8=",
+      "url": "images\/logo.jpg"
+    },
+    {
       "hash": "sha256-6B+fjFh\/sqIo4TkZDAxRg4b6\/JANvkrAN5XYZBCzyFs=",
       "url": "index.html"
     },
@@ -117,7 +121,7 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-YmjjfUEOfHLcb3CQnB27Q3AG\/UpXIzhO4kGD7hRaUWI=",
+      "hash": "sha256-lA7N53q+Nc1rj4NtJI+GzScF7ZZNIi8+WY3RFKtntcM=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -125,7 +129,7 @@
       "url": "_framework\/BlazorAnimate.dll"
     },
     {
-      "hash": "sha256-PMb51cUiHSHuG+yydnnrXNeQ3HsQ5JLvWMTGIj5vaGs=",
+      "hash": "sha256-Z67TtMyylJNRjIGeTd4jLIpnMLaCMeXzf0mbrBDHu9k=",
       "url": "_framework\/BlazorWasmSyncStart.dll"
     },
     {
@@ -641,5 +645,5 @@
       "url": "_content\/Syncfusion.Blazor.Themes\/tailwind.css"
     }
   ],
-  "version": "CxagpEla"
+  "version": "lj9D2Wzq"
 };
