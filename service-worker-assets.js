@@ -13,6 +13,10 @@
       "url": "css\/bootstrap\/bootstrap-darkly.min.css"
     },
     {
+      "hash": "sha256-3LXKhyYmYxt+fGciLxN474K5Ycw5FXqQJDJpW54Q3XQ=",
+      "url": "css\/bootstrap\/bootstrap-flatly.min.css"
+    },
+    {
       "hash": "sha256-Ont0XKIPs4G8F5vswFwCkN5t7KOSd8L8ifYhadEfEvk=",
       "url": "css\/bootstrap\/bootstrap-jornal.min.css"
     },
@@ -105,7 +109,7 @@
       "url": "images\/logo.jpg"
     },
     {
-      "hash": "sha256-2Bnw1\/GB+ZbGIpawMG6QVRAV9zggDwDg2WnbWwPr7Z8=",
+      "hash": "sha256-xMaZ19b2YmfgsL155lzL0dnU3g+vl9Xieu5NF26x+0A=",
       "url": "index.html"
     },
     {
@@ -673,5 +677,5 @@
       "url": "_content\/Syncfusion.Blazor.Themes\/tailwind.css"
     }
   ],
-  "version": "wz4H0Nri"
+  "version": "zA5Tul+I"
 };
