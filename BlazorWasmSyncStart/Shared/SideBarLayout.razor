@@ -21,23 +21,21 @@
 </SfToolbar>
 *@
 
-<div id="toolbar" class="bg-primary">
+<div id="toolbar" class="bg-dark">
     <button class="menu-button" @onclick="@SideBarToggle"><span class="oi oi-menu"></span></button>
 </div>
 
-<SfSidebar @ref="@sidebarObj" Type="SidebarType.Over" @bind-IsOpen="IsSidebarOpen" class="bg-dark"
+<SfSidebar @ref="@sidebarObj" Type="SidebarType.Over" @bind-IsOpen="IsSidebarOpen" class="bg-primary"
            EnablePersistence="false" CloseOnDocumentClick="false" ShowBackdrop="false"
            EnableGestures="true" MediaQuery="(min-width: 600px)">
     <ChildContent>
         <div>
             <div style="display:flex; height:var(--toolbar-height); justify-content:left; align-content:center">
                 <button class="menu-button" @onclick="@SideBarToggle"><span class="oi oi-menu"></span></button>
-@*                <SfButton IconCss="oi oi-menu" IconPosition="IconPosition.Right" @onclick="SideBarToggle">
-                </SfButton>
-*@            </div>
-                <div style="display:flex; justify-content:center; align-content:center;">
-                    <img height="120" width="200" src="images/logo.jpg" />
-                </div>
+            </div>
+            <div style="display:flex; justify-content:center; align-content:center;">
+                <img height="120" width="200" src="images/logo.jpg" />
+            </div>
             <NavigationMenu></NavigationMenu>
         </div>
     </ChildContent>
@@ -52,22 +50,24 @@
         --sidebar-width: 250px;
         --toolbar-height: 52px;
     }
-    #toolbar{
-        display:flex;
+
+    #toolbar {
+        display: flex;
         background: crimson;
         border: none;
         color: white;
-        height:var(--toolbar-height);
+        height: var(--toolbar-height);
         width: 100vw;
         box-shadow: 0 3px 5px rgba(0, 0, 0, .25);
     }
-    .menu-button{
-        justify-self:center;
-        background:none; 
-        border:none;
-        font-size:16px;
-        color:white;
-        margin-left:8px;
+
+    .menu-button {
+        justify-self: center;
+        background: none;
+        border: none;
+        font-size: 16px;
+        color: white;
+        margin-left: 8px;
     }
 
     .e-toolbar {
@@ -92,9 +92,9 @@
 
 
     .e-sidebar {
-/*        color: black;
-        background-color: slategray;
-*/        height: 100vh;
+        /*        color: black;
+            background-color: slategray;
+    */ height: 100vh;
         width: var(--sidebar-width) !important;
     }
 
