@@ -21,18 +21,17 @@
 </SfToolbar>
 *@
 
-<div id="toolbar">
+<div id="toolbar" class="bg-primary">
     <button class="menu-button" @onclick="@SideBarToggle"><span class="oi oi-menu"></span></button>
 </div>
 
-<SfSidebar @ref="@sidebarObj" Type="SidebarType.Over" @bind-IsOpen="IsSidebarOpen"
+<SfSidebar @ref="@sidebarObj" Type="SidebarType.Over" @bind-IsOpen="IsSidebarOpen" class="bg-dark"
            EnablePersistence="false" CloseOnDocumentClick="false" ShowBackdrop="false"
            EnableGestures="true" MediaQuery="(min-width: 600px)">
     <ChildContent>
         <div>
             <div style="display:flex; height:var(--toolbar-height); justify-content:left; align-content:center">
                 <button class="menu-button" @onclick="@SideBarToggle"><span class="oi oi-menu"></span></button>
-
 @*                <SfButton IconCss="oi oi-menu" IconPosition="IconPosition.Right" @onclick="SideBarToggle">
                 </SfButton>
 *@            </div>
@@ -93,9 +92,9 @@
 
 
     .e-sidebar {
-        color: black;
+/*        color: black;
         background-color: slategray;
-        height: 100vh;
+*/        height: 100vh;
         width: var(--sidebar-width) !important;
     }
 
