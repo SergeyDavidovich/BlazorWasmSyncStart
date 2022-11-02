@@ -23,6 +23,7 @@
 
 <div id="toolbar" class="bg-dark">
     <button class="menu-button" @onclick="@SideBarToggle"><span class="oi oi-menu"></span></button>
+    <button class="theme-button" @onclick="@ThemeToggle"><span class="@themeIconClass"></span></button>
 </div>
 
 <SfSidebar @ref="@sidebarObj" Type="SidebarType.Over" @bind-IsOpen="IsSidebarOpen" class="bg-primary"
@@ -53,7 +54,6 @@
 
     #toolbar {
         display: flex;
-        background: crimson;
         border: none;
         color: white;
         height: var(--toolbar-height);
@@ -62,12 +62,20 @@
     }
 
     .menu-button {
-        justify-self: center;
         background: none;
         border: none;
         font-size: 16px;
         color: white;
         margin-left: 8px;
+    }
+
+    .theme-button {
+        background: none;
+        border: none;
+        font-size: 16px;
+        color: white;
+        margin-left: auto;
+        margin-right:12Px;
     }
 
     .e-toolbar {
@@ -118,9 +126,9 @@
 
     protected override void OnInitialized()
     {
-        //#if DEBUG
-        //    Thread.Sleep(6000);
-        //#endif
+        #if DEBUG
+            Thread.Sleep(6000);
+        #endif
     }
 
     public void SideBarToggle()

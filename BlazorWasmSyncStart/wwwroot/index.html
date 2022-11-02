@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>BlazorWasmSyncStart</title>
     <base href="/" />
-    <link href="css/bootstrap/bootstrap-flatly.min.css" rel="stylesheet" />
+    <link id="theme" href="css/bootstrap/bootstrap-flatly.min.css" rel="stylesheet" />
     <link href="css/app.css" rel="stylesheet" />
     <link href="BlazorWasmSyncStart.styles.css" rel="stylesheet" />
     <link href="manifest.json" rel="manifest" />
@@ -22,18 +22,18 @@
     <!--<div id="app">Loading...</div>-->
 
     <div id="app">
-        <div class="container">
-            <div class="navbar-header">
+        <!--<div class="container">-->
+            <!--<div class="navbar-header">
                 <a class="navbar-brand">PWA</a>
-            </div>
-        </div>
+            </div>-->
+        <!--</div>-->
         <div class="container body-content">
             <p>
                 <h1 class="center">Loading...</h1>
             </p>
             <hr />
             <footer>
-                <p>&copy; WebAssembly Start</p>
+                <p>&copy; Application Start</p>
             </footer>
         </div>
     </div>
@@ -46,6 +46,15 @@
     </div>
     <script src="_framework/blazor.webassembly.js"></script>
     <script>navigator.serviceWorker.register('service-worker.js');</script>
+
+    <script>
+        function setTheme(theme) {
+            document.getElementsByTagName('body')[0].style.display = 'none';
+            let synclink = document.getElementById('theme');
+            synclink.href = '_content/Syncfusion.Blazor.Themes/' + theme + '.css';
+            setTimeout(function () { document.getElementsByTagName('body')[0].style.display = 'block'; }, 200);
+        }
+    </script>
 </body>
 
 </html>
