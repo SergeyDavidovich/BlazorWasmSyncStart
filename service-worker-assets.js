@@ -109,7 +109,7 @@
       "url": "images\/logo.jpg"
     },
     {
-      "hash": "sha256-xMaZ19b2YmfgsL155lzL0dnU3g+vl9Xieu5NF26x+0A=",
+      "hash": "sha256-ejl89UsteQtDzpTdBLoVMSDtvfAmJZMoFoxjkXJhyy8=",
       "url": "index.html"
     },
     {
@@ -677,5 +677,5 @@
       "url": "_content\/Syncfusion.Blazor.Themes\/tailwind.css"
     }
   ],
-  "version": "zA5Tul+I"
+  "version": "iSM+1lwv"
 };
