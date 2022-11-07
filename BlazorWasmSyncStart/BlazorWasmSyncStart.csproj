@@ -11,11 +11,11 @@
     <PackageReference Include="BlazorAnimate" Version="3.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.8" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.8" PrivateAssets="all" />
-    <PackageReference Include="Syncfusion.Blazor.Buttons" Version="20.2.0.45" />
+    <PackageReference Include="Syncfusion.Blazor.Buttons" Version="20.3.0.52" />
     <PackageReference Include="Syncfusion.Blazor.Cards" Version="20.3.0.52" />
-    <PackageReference Include="Syncfusion.Blazor.Navigations" Version="20.2.0.45" />
-    <PackageReference Include="Syncfusion.Blazor.SplitButtons" Version="20.2.0.45" />
-      <PackageReference Include="Syncfusion.Blazor.Themes" Version="20.2.0.40" />
+    <PackageReference Include="Syncfusion.Blazor.Navigations" Version="20.3.0.52" />
+    <PackageReference Include="Syncfusion.Blazor.SplitButtons" Version="20.3.0.52" />
+      <PackageReference Include="Syncfusion.Blazor.Themes" Version="20.3.0.52" />
 </ItemGroup>
 
   <ItemGroup>
