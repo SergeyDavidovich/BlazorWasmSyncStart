@@ -6,20 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>BlazorWasmSyncStart</title>
     <base href="/BlazorWasmSyncStart/" />
-    <link id="theme" href="css/bootstrap/bootstrap-superhero.min.css" rel="stylesheet" />
+
+    <!--stylesheets -->
+    <link id="bootstrap-theme" href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="css/app.css" rel="stylesheet" />
+
+    <link id="light-dark-mode" href="css/app-light.css" rel="stylesheet" />
+
     <link href="BlazorWasmSyncStart.styles.css" rel="stylesheet" />
+    <link href="_content/Syncfusion.Blazor.Themes/bootstrap5.css" rel="stylesheet" />
+    <!--stylesheets-->
+
     <link href="manifest.json" rel="manifest" />
     <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
     <link rel="apple-touch-icon" sizes="192x192" href="icon-192.png" />
-    <link href="_content/Syncfusion.Blazor.Themes/bootstrap5-dark.css" rel="stylesheet" />
 
     <script src="_content/Syncfusion.Blazor.Core/scripts/syncfusion-blazor.min.js" type="text/javascript"></script>
     <script src="_content/BlazorAnimate/blazorAnimateInterop.js"></script>
 </head>
 
 <body>
-    <!--<div id="app">Loading...</div>-->
     <div id="app">
         <div class="container body-content">
             <p>
@@ -45,7 +51,16 @@
             document.getElementsByTagName('body')[0].style.display = 'none';
             let synclink = document.getElementById('theme');
             synclink.href = '_content/Syncfusion.Blazor.Themes/' + theme + '.css';
-            setTimeout(function () { document.getElementsByTagName('body')[0].style.display = 'block'; }, 200);
+        }
+        function SetDarkModeTheme(isDark) {
+            //document.getElementsByTagName('body')[0].style.display = 'none';
+
+            let light_dark_mode = document.getElementById('light-dark-mode');
+
+            light_dark_mode.href = isDark ? 'css/app-dark.css' : 'css/app-light.css';
+
+
+            //setTimeout(function () { document.getElementsByTagName('body')[0].style.display = 'block'; }, 200);
         }
     </script>
 </body>
