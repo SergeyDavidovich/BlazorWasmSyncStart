@@ -2,6 +2,8 @@
 @using Syncfusion.Blazor.Navigations
 @using Syncfusion.Blazor.Buttons
 
+@inject IJSRuntime JS
+
 @*<SfToolbar Height="52px">
     <ToolbarItems>
         <ToolbarItem Text="Toogle" Align="ItemAlign.Left">
@@ -75,7 +77,7 @@
         font-size: 16px;
         color: white;
         margin-left: auto;
-        margin-right:12Px;
+        margin-right: 12Px;
     }
 
     .e-toolbar {
@@ -100,8 +102,8 @@
 
     .e-sidebar {
         /*        color: black;
-            background-color: slategray;
-    */ height: 100vh;
+                background-color: slategray;
+        */ height: 100vh;
         width: var(--sidebar-width) !important;
     }
 
@@ -126,9 +128,9 @@
 
     protected override void OnInitialized()
     {
-        #if DEBUG
-            Thread.Sleep(6000);
-        #endif
+#if DEBUG
+        Thread.Sleep(6000);
+#endif
     }
 
     public void SideBarToggle()
@@ -139,13 +141,19 @@
     {
         IsThemeDark = !IsThemeDark;
         themeIconClass = GetThemeIcon(IsThemeDark);
+
+        if (IsThemeDark)
+            JS.InvokeAsync<bool>("SetDarkModeTheme", true);
+        else
+            JS.InvokeAsync<object>("SetDarkModeTheme", false);
+
     }
     private string GetThemeIcon(bool isDark)
     {
         if (isDark) return "oi oi-moon";
         else return "oi oi-sun";
     }
-    private void SetTheme(string name)
+    private void SetSyncfusionTheme(string name)
     {
 
     }
