@@ -9,7 +9,7 @@
       "url": "css\/app-light.css"
     },
     {
-      "hash": "sha256-kfXT+\/7PwnK7UBTMq8\/AX20+soj7u1sV\/U1lCtnmSZI=",
+      "hash": "sha256-1KuMUYKzb9gQMNxaOTe2PorZrZSKXeFizE+qHEYrUxM=",
       "url": "css\/app.css"
     },
     {
@@ -117,7 +117,7 @@
       "url": "images\/logo.jpg"
     },
     {
-      "hash": "sha256-sg6u5sEcWPHQvfMHTzv41VO8Li15Ytp7GhjIj+NW9+Y=",
+      "hash": "sha256-0p+lhYCUck4In5F8yTKH4JlQxwPgrjP4zDWVoc8WHaA=",
       "url": "index.html"
     },
     {
@@ -161,7 +161,7 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-QMabVzW5dp+JxfHBoH638jec9I8QbnSmOSmwJ97x9gw=",
+      "hash": "sha256-RXPS3+dLfdlN1W2lwiaq8B\/AIBP04ACv3pTBpmXX3Lk=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -169,7 +169,7 @@
       "url": "_framework\/BlazorAnimate.dll"
     },
     {
-      "hash": "sha256-ggkphuvHwU7tictbX95FVMnJgkV2hkazci4Pj+QIZbo=",
+      "hash": "sha256-A17ATfQ4m7G9do3502p2kMwuvF5cv5Hpo2jMyRksCJA=",
       "url": "_framework\/BlazorWasmSyncStart.dll"
     },
     {
@@ -697,5 +697,5 @@
       "url": "_content\/Syncfusion.Blazor.Themes\/tailwind.css"
     }
   ],
-  "version": "HPY43T3q"
+  "version": "Qbksq1+C"
 };
