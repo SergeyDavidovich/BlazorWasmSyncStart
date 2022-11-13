@@ -1,11 +1,11 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-D9vb3I5ryvQffzYp1uuGjFimIdlMhCv+kph53rlXlEY=",
+      "hash": "sha256-6oiyPnRvCjloP0x08zSb9OfT5P6yV6nP3GlW7Y30btM=",
       "url": "Cloud-Icon-192.png"
     },
     {
-      "hash": "sha256-TK0\/ybeygRL6LZhqA8vUMZcPmTOYRix7Kkpjk\/Q4z1I=",
+      "hash": "sha256-LWqhxJyObSuGK0R8DKvfUrQHUf3s8tZhrXmFdpLl5Fw=",
       "url": "Cloud-Icon-512.png"
     },
     {
@@ -129,7 +129,7 @@
       "url": "index.html"
     },
     {
-      "hash": "sha256-CEn9smOpqZovjUIXSGeH0WBFdj4bQWNzW30ARVdetdM=",
+      "hash": "sha256-bZ7o9CEmnxgeI9NdavO2tXr+SZA64bSsfT6dBkeyyu8=",
       "url": "manifest.json"
     },
     {
@@ -705,5 +705,5 @@
       "url": "_content\/Syncfusion.Blazor.Themes\/tailwind.css"
     }
   ],
-  "version": "T2J7Ba7x"
+  "version": "rujbPdtP"
 };
