@@ -23,11 +23,12 @@
 </SfToolbar>
 *@
 
-<div id="toolbar" class="bg-dark">
-    <button class="menu-button" @onclick="@SideBarToggle"><span class="oi oi-menu"></span></button>
-    <button class="theme-button" @onclick="@ThemeToggle"><span class="@themeIconClass"></span></button>
-</div>
-
+<Animate Animation="Animations.FadeDown">
+    <div id="toolbar" class="bg-dark">
+        <button class="menu-button" @onclick="@SideBarToggle"><span class="oi oi-menu"></span></button>
+        <button class="theme-button" @onclick="@ThemeToggle"><span class="@themeIconClass"></span></button>
+    </div>
+</Animate>
 <SfSidebar @ref="@sidebarObj" Type="SidebarType.Over" @bind-IsOpen="IsSidebarOpen" class="bg-primary"
            EnablePersistence="false" CloseOnDocumentClick="false" ShowBackdrop="false"
            EnableGestures="true" MediaQuery="(min-width: 600px)">
@@ -102,8 +103,8 @@
 
     .e-sidebar {
         /*        color: black;
-                background-color: slategray;
-        */ height: 100vh;
+                    background-color: slategray;
+            */ height: 100vh;
         width: var(--sidebar-width) !important;
     }
 
@@ -129,7 +130,7 @@
     protected override void OnInitialized()
     {
 #if DEBUG
-        Thread.Sleep(6000);
+    Thread.Sleep(6000);
 #endif
     }
 
