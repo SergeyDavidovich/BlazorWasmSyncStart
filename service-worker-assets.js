@@ -121,7 +121,7 @@
       "url": "index.html"
     },
     {
-      "hash": "sha256-eiaWePoKKyiqR6UHY7OOEiQ8fxoxzAMUJmcf1aGbqy8=",
+      "hash": "sha256-5gymFPLTuqVKdGigpH0venK7p4Z2nvgmUuLujHedapc=",
       "url": "manifest.json"
     },
     {
@@ -697,5 +697,5 @@
       "url": "_content\/Syncfusion.Blazor.Themes\/tailwind.css"
     }
   ],
-  "version": "xyW89Sg1"
+  "version": "8VDVS+b7"
 };
