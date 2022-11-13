@@ -1,5 +1,5 @@
 {
-  "name": "BlazorWasmSyncStart",
+  "name": "Blazor WasmSync Start",
   "short_name": "BlazorWasmSyncStart",
   "start_url": "./",
   "display": "standalone",

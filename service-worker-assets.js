@@ -117,11 +117,11 @@
       "url": "images\/logo.jpg"
     },
     {
-      "hash": "sha256-x6R4rLLRPlnZnjWz6y\/WoIh\/wcHca1CZWZWH122gPhk=",
+      "hash": "sha256-qgI1TjV652UxcSmGVxEbIN6G7NwsSrbjahStZprmgfg=",
       "url": "index.html"
     },
     {
-      "hash": "sha256-r9Xbl6S4WQBNkh+2WQVxNwBPVQJc0yV5TWZA+UCCNzs=",
+      "hash": "sha256-eiaWePoKKyiqR6UHY7OOEiQ8fxoxzAMUJmcf1aGbqy8=",
       "url": "manifest.json"
     },
     {
@@ -697,5 +697,5 @@
       "url": "_content\/Syncfusion.Blazor.Themes\/tailwind.css"
     }
   ],
-  "version": "5AjBaO3V"
+  "version": "xyW89Sg1"
 };
