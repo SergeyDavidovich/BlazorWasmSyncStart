@@ -2,12 +2,12 @@
 @inject HttpClient Http
 
 <PageTitle>Weather forecast</PageTitle>
-<Animate Animation="Animations.FadeIn" DurationMs="1000">
 
-    <h1 style="margin-top:80px;">Weather forecast</h1>
-
-    <p>This component demonstrates fetching data from the server.</p>
-</Animate>
+<div style="position:relative; top:80px;">
+    <Animate Animation="Animations.FadeIn" DurationMs="1000">
+        <h1>Weather forecast</h1>
+        <p style="margin-top:40px;">This component demonstrates fetching data from the server.</p>
+    </Animate>
 
 @if (forecasts == null)
 {
@@ -28,17 +28,19 @@ else
             <tbody>
                 @foreach (var forecast in forecasts)
                 {
-                        <tr>
-                            <td>@forecast.Date.ToShortDateString()</td>
-                            <td>@forecast.TemperatureC</td>
-                            <td>@forecast.TemperatureF</td>
-                            <td>@forecast.Summary</td>
-                        </tr>
+                    <tr>
+                        <td>@forecast.Date.ToShortDateString()</td>
+                        <td>@forecast.TemperatureC</td>
+                        <td>@forecast.TemperatureF</td>
+                        <td>@forecast.Summary</td>
+                    </tr>
                 }
             </tbody>
         </table>
     </Animate>
 }
+</div>
+
 @code {
     private WeatherForecast[]? forecasts;
 

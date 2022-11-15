@@ -1,25 +1,25 @@
 ﻿@page "/cards"
 <PageTitle>Cards</PageTitle>
-
-<Animate Animation="Animations.FadeIn" DurationMs="1000">
-    <h1 style="margin-top:80px;">Cards</h1>
-    <div id="cards">
-        <div class="card">
-        <SfCard ID="BasicCard">
-            <CardHeader Title="Debunking Five Data Science Myths" />
-            <CardContent Content="Tech evangelists are currently pounding their pulpits about all things AI, machine learning, analytics—anything that sounds" />
-            <CardFooter>
-                <CardFooterContent>
-                    <SfButton CssClass="e-btn e-outline e-primary">Read More</SfButton>
-                </CardFooterContent>
-            </CardFooter>
-        </SfCard>
+<div style="position:relative; top:80px;">
+    <Animate Animation="Animations.FadeIn" DurationMs="1000">
+        <h1>Cards</h1>
+        <div id="cards">
+            <div class="card">
+                <SfCard ID="BasicCard">
+                    <CardHeader Title="Debunking Five Data Science Myths" />
+                    <CardContent Content="Tech evangelists are currently pounding their pulpits about all things AI, machine learning, analytics—anything that sounds" />
+                    <CardFooter>
+                        <CardFooterContent>
+                            <SfButton CssClass="e-btn e-outline e-primary">Read More</SfButton>
+                        </CardFooterContent>
+                    </CardFooter>
+                </SfCard>
+            </div>
         </div>
-    </div>
-</Animate>
-
+    </Animate>
+</div>
 <style>
-    .card{
+    .card {
     }
 </style>
 
